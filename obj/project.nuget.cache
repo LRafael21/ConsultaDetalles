@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ioyIbSYMLZNjEaZi7xdV5whNR/RTG9RH0CClAEwkOPg+XTQ53oh9fh8EYPddYUj91W1LuqZm4R6dHkfBz4jF8Q==",
+  "dgSpecHash": "mLX2sg6Tm+BYavGIiYGJ+2+DcWErIpkvh/vY875xo2gKklrt4ghd25OxI8rniQib/+gAuYazG3gokdyzD8EEJw==",
   "success": true,
-  "projectFilePath": "C:\\DetalleyConsulta\\DetalleyConsulta.csproj",
+  "projectFilePath": "D:\\DetalleyConsulta\\DetalleyConsulta.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Luis Rafael\\.nuget\\packages\\blazored.toast\\3.2.2\\blazored.toast.3.2.2.nupkg.sha512",
     "C:\\Users\\Luis Rafael\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

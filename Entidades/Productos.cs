@@ -1,12 +1,17 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
-using DetalleyConsulta.Detalle;
+
 
 namespace DetalleyConsulta.Entidades
 {
     public partial class Productos
     {
+        public Productos()
+        {
+            this.ProductosDetalles = new HashSet<ProductosDetalle>();
+        }
+
         [Key]
         public int ProductoId { get; set; }
 
@@ -26,7 +31,9 @@ namespace DetalleyConsulta.Entidades
         public float Precio { get; set; }
 
         public int Ganancia { get; set; }
-       
+
+        public virtual ICollection<ProductosDetalle> ProductosDetalles { get; set; }
+
 
         [ForeignKey("ProductoId")]
 

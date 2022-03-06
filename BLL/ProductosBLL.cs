@@ -6,7 +6,7 @@ using DetalleyConsulta.DAL;
 using DetalleyConsulta.Entidades;
 using Microsoft.EntityFrameworkCore;
 using System.Net.Http.Headers;
-using DetalleyConsulta.Detalle;
+
 
 namespace DetalleyConsulta.BLL
 {
@@ -49,24 +49,25 @@ namespace DetalleyConsulta.BLL
             }
             return encontrado;
         }
-        
+
+       
         private bool Insertar(Productos producto)
         {
-            bool esta = false;
+            bool encontrado = false;
 
             try
             {
                 producto.ValorInventario = producto.Costo * producto.Existencia;
                 _contexto.Productos.Add(producto);
 
-                esta = _contexto.SaveChanges() > 0;
+                encontrado = _contexto.SaveChanges() > 0;
             }
             catch (Exception)
             {
                 throw;
             }
 
-            return esta;
+            return encontrado;
         }
         private bool Modificar(Productos producto)
         {
@@ -139,13 +140,13 @@ namespace DetalleyConsulta.BLL
             }
             return paso;
         }
-        public List<Productos> GetList(Expression<Func<Productos, bool>> criterio)
+        public List<Productos> GetList(Expression<Func<Productos, bool>> critero)
         {
-            
             List<Productos> lista = new List<Productos>();
+
             try
             {
-                lista = _contexto.Productos.Where(criterio).ToList();
+                lista = _contexto.Productos.Where(critero).ToList();
             }
             catch (Exception)
             {
@@ -155,12 +156,14 @@ namespace DetalleyConsulta.BLL
             return lista;
         }
 
-       /* public List<ProductosDetalle> GetList(Expression<Func<ProductosDetalle, bool>> criterio)
+
+        public List<ProductosDetalle> GetListProductoDetalle(Expression<Func<ProductosDetalle, bool>> criterio)
         {
             List<ProductosDetalle> lista = new List<ProductosDetalle>();
+
             try
             {
-                lista = _contexto.Productos.Where(criterio).ToList();
+                lista = _contexto.ProductosDetalle.Where(criterio).ToList();
             }
             catch (Exception)
             {
@@ -168,7 +171,8 @@ namespace DetalleyConsulta.BLL
             }
 
             return lista;
-        }*/
+
+        }
 
 
 

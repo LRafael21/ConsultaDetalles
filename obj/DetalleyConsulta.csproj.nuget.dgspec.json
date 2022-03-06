@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\DetalleyConsulta\\DetalleyConsulta.csproj": {}
+    "D:\\DetalleyConsulta\\DetalleyConsulta.csproj": {}
   },
   "projects": {
-    "C:\\DetalleyConsulta\\DetalleyConsulta.csproj": {
+    "D:\\DetalleyConsulta\\DetalleyConsulta.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\DetalleyConsulta\\DetalleyConsulta.csproj",
+        "projectUniqueName": "D:\\DetalleyConsulta\\DetalleyConsulta.csproj",
         "projectName": "DetalleyConsulta",
-        "projectPath": "C:\\DetalleyConsulta\\DetalleyConsulta.csproj",
+        "projectPath": "D:\\DetalleyConsulta\\DetalleyConsulta.csproj",
         "packagesPath": "C:\\Users\\Luis Rafael\\.nuget\\packages\\",
-        "outputPath": "C:\\DetalleyConsulta\\obj\\",
+        "outputPath": "D:\\DetalleyConsulta\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -19,9 +19,7 @@ namespace DetalleyConsulta.Migrations
                     Costo = table.Column<float>(type: "REAL", nullable: false),
                     ValorInventario = table.Column<float>(type: "REAL", nullable: false),
                     Precio = table.Column<float>(type: "REAL", nullable: false),
-                    Ganancia = table.Column<int>(type: "INTEGER", nullable: false),
-                    Presentacion = table.Column<string>(type: "TEXT", nullable: true),
-                    ExistenciaEmpaque = table.Column<decimal>(type: "TEXT", nullable: false)
+                    Ganancia = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -35,11 +33,11 @@ namespace DetalleyConsulta.Migrations
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     ProductoId = table.Column<int>(type: "INTEGER", nullable: false),
-                    Descripcion = table.Column<string>(type: "TEXT", nullable: true),
+                    Presentacion = table.Column<string>(type: "TEXT", nullable: false),
                     Cantidad = table.Column<decimal>(type: "TEXT", nullable: false),
                     Precio = table.Column<decimal>(type: "TEXT", nullable: false),
                     ExistenciaEmpaque = table.Column<decimal>(type: "TEXT", nullable: false),
-                    Presentacion = table.Column<string>(type: "TEXT", nullable: false)
+                    ProductosProductoId = table.Column<int>(type: "INTEGER", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -50,17 +48,22 @@ namespace DetalleyConsulta.Migrations
                         principalTable: "Productos",
                         principalColumn: "ProductoId",
                         onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_ProductosDetalle_Productos_ProductosProductoId",
+                        column: x => x.ProductosProductoId,
+                        principalTable: "Productos",
+                        principalColumn: "ProductoId");
                 });
-
-            migrationBuilder.InsertData(
-                table: "Productos",
-                columns: new[] { "ProductoId", "Costo", "Descripcion", "Existencia", "ExistenciaEmpaque", "Ganancia", "Precio", "Presentacion", "ValorInventario" },
-                values: new object[] { 1, 50f, "Arroz", 50f, 30m, 20, 100f, null, 0f });
 
             migrationBuilder.CreateIndex(
                 name: "IX_ProductosDetalle_ProductoId",
                 table: "ProductosDetalle",
                 column: "ProductoId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_ProductosDetalle_ProductosProductoId",
+                table: "ProductosDetalle",
+                column: "ProductosProductoId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

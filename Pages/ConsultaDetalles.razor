@@ -1,5 +1,5 @@
 @page "/ConsultaDetalles"
-@using DetalleyConsulta.Detalle;
+
 
 
 <EditForm Model="lista">
@@ -23,9 +23,7 @@
                         <option value="0">Todos </option>
                         <option value="1">ID</option>
                         <option value="2">Descripcion</option>
-                        <option value="3">Presentacion</option>
-                        <option value="4">Precio</option>
-                        <option value="5">Existencia Empaque</option>
+                        
                     </InputSelect>
 
                     <div class="flex-fill mx-2">
@@ -52,16 +50,26 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach (var item in lista2)
+                
+                @foreach (var itemm in lista2)
                 {
-                    <tr>
-                        <td>@item.ProductoId</td>
-                       @*  <td>@item.lista.Descripcion</td> *@
-                         <td>@item.Presentacion</td> 
-                        <td>RD$@item.Precio</td>
-                         <td>@item.ExistenciaEmpaque</td> 
-                    </tr>
+                    @foreach (var item in lista)
+                    {
+                        if (itemm.ProductoId == item.ProductoId)
+                        {
+                            <tr>
+                                <td>@item.ProductoId</td>
+                                <td>@item.Descripcion</td>
+                                <td>@itemm.Presentacion</td>
+                                <td>RD$ @itemm.Precio</td>                                
+                                <td>@itemm.ExistenciaEmpaque</td>
+
+                            </tr>
+                        }
+                    }
                 }
+    
+
             </tbody>
 
         </table>
@@ -69,13 +77,16 @@
 </EditForm>
 
 @code {
+        public Productos productos { get; set; } = new Productos();
+
     public string filtro { get; set; }
     public string Criterio { get; set; }
- public List<Productos> lista { get; set; } = new List<Productos>();
-    public virtual List  <ProductosDetalle> lista2 { get; set; } = new List<ProductosDetalle>();
-       
+    public List<Productos> lista { get; set; } = new List<Productos>();
+    public List<ProductosDetalle> lista2 { get; set; } = new List<ProductosDetalle>();
+    
 
 
+            [Inject]
     public ProductosBLL productosBLL { get; set; }
 
     private void Buscar()
@@ -85,18 +96,19 @@
             switch (filtro)
             {
                 case "1":
-                    lista = productosBLL.GetList(p => p.ProductoId == int.Parse(Criterio));
+                    lista = productosBLL.GetList(e => e.ProductoId == int.Parse(Criterio));
                     break;
+
                 case "2":
-                    lista = productosBLL.GetList(p => p.Descripcion.ToLower().Contains(Criterio.ToLower()));
+                    lista2 = productosBLL.GetListProductoDetalle(e => e.Presentacion.ToLower().Contains(Criterio.ToLower()));
                     break;
- 
 
             }
         }
         else
         {
-            lista = productosBLL.GetList(p => true);
+            lista2 = productosBLL.GetListProductoDetalle(e => true);
+            lista = productosBLL.GetList(e => true);
         }
     }
 }

@@ -1,5 +1,5 @@
 @page "/RegistroProductos"
-@using DetalleyConsulta.Detalle;
+
 
 @inject IToastService toastService
 
@@ -95,6 +95,17 @@
                     </div>
                 </div>
 
+                @*  <div class="row">
+                  
+                    <div class="form-group col">
+                        <label>Fecha de Expiracion</label>
+                        <InputDate  />
+                        <ValidationMessage For="@(() => producto.Fecha)" />
+                    </div>
+                </div> *@
+
+                
+
                  
               
             </div>
@@ -113,10 +124,10 @@
             <div class="form-row align-items-center">
                 <div class="col">
                     <div class="form-group">
-                        <label> <b> Presentacion </b> </label>
-                        <label style="width: 30%"><b>Cantidad</b></label>
-                        <label><b>Precio</b></label>
-                        <label><b>ExistenciaEmpaque</b></label>
+                        <label style="width: 25%" > <b> Presentacion </b> </label>
+                        <label style="width: 20%"><b>Cantidad</b></label>
+                        <label  style="width: 20%"><b>Precio</b></label>
+                        <label><b>Existencia Empaque</b></label>
 
                         <div class="input-group">
         
@@ -177,7 +188,7 @@
 
         @* Botones *@
         <div class="form-group text-center" display: inline-block>
-            <button type="button" class="btn btn-lg btn-primary">Nuevo</button>
+            <button type="button" class="btn btn-lg btn-primary"@onclick="Nuevo">Nuevo</button>
             <button type="submit" class="btn btn-lg btn-success">Guardar</button>
             <button type="button" class="btn btn-lg btn-danger" @onclick="Eliminar">Eliminar</button>
         </div>
