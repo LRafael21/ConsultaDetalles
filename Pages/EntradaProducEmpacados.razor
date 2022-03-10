@@ -1,0 +1,209 @@
+@page "/EntradaProductosEmpacados"
+
+
+<EditForm Model="productos" OnValidSubmit="Guardar">
+    <DataAnnotationsValidator />
+
+    <div class="container">
+
+        <div class="card">
+
+            <div class="card-header">
+                <h3>
+                    <center> <b>Entrada de Productos Empacados </b></center>
+                </h3>
+            </div>
+
+            <div class="card-body">
+
+                <div class="form-row align-items-center">
+                    <div class="col">
+                        <div class="form-group">
+                            <label><b>Producto Id</b></label>
+                            <div class="input-group" style="width: 25rem;">
+                                <InputNumber @bind-Value="productos.ProductoId" class="form-control col-4" />
+                                <div class="input-group-append">
+                                    <button type="button" class="btn btn-warning">
+                                        <i class="oi oi-magnifying-glass mr-2" /> <b> Buscar</b>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                @* Fecha *@
+                <div class="form-group col" style="width: 25rem;">
+                    <label><b>Fecha </b></label>
+                    <InputDate class="form-control" @bind-Value="productos.Fecha" />
+                    <ValidationMessage For="@(() => productos.Fecha)" />
+                </div>
+
+                <div clas="form-group">
+
+                    <label><b>Concepto</b></label>
+                    <InputText class="form-control" @bind-Value="productos.Descripcion" />
+                    <ValidationMessage For="@(() => productos.Descripcion)" />
+                </div>
+
+                <br>
+                <br>
+
+                @* --------------------------------Productos Utilizados---------------------------- *@
+                <div class="card">
+
+                    <div class="card-header">
+                        <h3>
+                            <center> <b>Productos Utilizados </b></center>
+                        </h3>
+                    </div>
+
+                    <div class="form-row align-items-center">
+                        <div class="col">
+                            <div class="form-group">
+                                <label style="width: 58%"> <b> Producto </b> </label>
+                                <label style="width: 10%"><b>Cantidad</b></label>
+
+                                <div class="input-group">
+
+
+                                    <InputSelect class="form-control col-3 " style="width: 50%" @bind-Value="filtro">
+                                        <option value="0">Elegir Producto</option>
+                                        <option value="1">Nuez</option>
+                                        <option value="2">Fruto Seco </option>
+                                    </InputSelect>
+
+                                    <InputNumber class="form-control" style="width: 25%"
+                                        @bind-Value="productos.Cantidad" />
+
+
+                                    <button type="button" class="btn btn-outline-primary btn-lg"
+                                        @onclick="AgregarDetalle"> <b>Agregar</b></button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        @* Tabla de productos *@
+                        <table class="table table-success table-striped">
+                            <thead class="thead-dark">
+                                <tr class="table-info">
+                                    <th>Producto Id</th>
+                                    <th>Descripcion</th>
+                                    <th>Cantidad</th>
+                                    <th>❌</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                @foreach (var item in productos.ProductosDetalle)
+                                {
+                                    <tr>
+                                        <td>@item.ProductoId</td>
+                                        @* <td>@item.productos.Descripcion</td> *@
+                                        <td>RD$@item.Precio</td>
+
+                                        <td><span class="btn btn-sm btn-outline-primary oi oi-ban" href="#"
+                                            @onclick="@(() => RemoverFila(item))"> Remover</span> </td>
+                                    </tr>
+                                }
+                            </tbody>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br> 
+    <br>
+
+    @* -------------------------------------PRODUCTOS PRODUCIDOS----------------------------------------- *@
+    <div class="container">
+
+        <div class="card">
+
+            <div class="card-header">
+                <h3>
+                    <center> <b>Productos Producidos </b></center>
+                </h3>
+            </div>
+
+            <div class="form-row align-items-center">
+                <div class="col">
+                    <div class="form-group">
+                        <label style="width: 60%"> <b> Producto </b> </label>
+                        <label style="width: 8%"><b>Cantidad</b></label>
+                    </div>
+                    <div class="input-group">
+                        <InputSelect class="form-control col-3 " style="width: 30%" @bind-Value="filtro">
+                            <option value="0">Elegir Producto</option>
+                            <option value="1">Nuez</option>
+                            <option value="2">Fruto Seco </option>
+                        </InputSelect>
+
+                        <InputNumber class="form-control" style="width: 10%" @bind-Value="productos.Cantidad" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        @* -------------------------------Footer--------------------------------------- *@
+    <div class="container">
+
+        <div class="card">
+            <div class="card-footer">
+
+                      @*---------------------------------Botones---------------------------------- *@
+                <div class="form-group text-center" display: inline-block>
+                    <button type="button" class="btn btn-lg btn-primary" @onclick="Nuevo">Nuevo</button>
+                    <button type="submit" class="btn btn-lg btn-success">Guardar</button>
+                    <button type="button" class="btn btn-lg btn-danger" @onclick="Eliminar">Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</EditForm>
+
+
+
+
+@code {
+
+    [Parameter]
+    public int ProductoId { get; set; }
+
+    public Productos productos { get; set; } = new Productos();
+    public int Cantidad { get; set; }
+    public string Descripcion { get; set; }
+    public string filtro { get; set; }
+
+    public void Guardar()
+    {
+
+    }
+    public void Nuevo()
+    {
+
+    }
+    public void Eliminar()
+    {
+
+    }
+
+
+    private void AgregarDetalle()
+    {
+        this.productos.ProductosDetalle.Add(new ProductosDetalle(ProductoId, Cantidad)
+        );
+    }
+
+    private void RemoverFila(ProductosDetalle item)
+    {
+        this.productos.ProductosDetalle.Remove(item);
+    }
+}

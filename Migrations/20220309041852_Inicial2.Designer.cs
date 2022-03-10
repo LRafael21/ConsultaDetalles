@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DetalleyConsulta.Migrations
 {
     [DbContext(typeof(Contexto))]
-    [Migration("20220306021757_Inicial")]
-    partial class Inicial
+    [Migration("20220309041852_Inicial2")]
+    partial class Inicial2
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -35,6 +35,9 @@ namespace DetalleyConsulta.Migrations
 
                     b.Property<float>("Existencia")
                         .HasColumnType("REAL");
+
+                    b.Property<DateTime>("Fecha")
+                        .HasColumnType("TEXT");
 
                     b.Property<int>("Ganancia")
                         .HasColumnType("INTEGER");

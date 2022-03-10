@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\DetalleyConsulta\\DetalleyConsulta.csproj": {}
+    "C:\\Intento\\ConsultaDetalles\\DetalleyConsulta.csproj": {}
   },
   "projects": {
-    "D:\\DetalleyConsulta\\DetalleyConsulta.csproj": {
+    "C:\\Intento\\ConsultaDetalles\\DetalleyConsulta.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DetalleyConsulta\\DetalleyConsulta.csproj",
+        "projectUniqueName": "C:\\Intento\\ConsultaDetalles\\DetalleyConsulta.csproj",
         "projectName": "DetalleyConsulta",
-        "projectPath": "D:\\DetalleyConsulta\\DetalleyConsulta.csproj",
+        "projectPath": "C:\\Intento\\ConsultaDetalles\\DetalleyConsulta.csproj",
         "packagesPath": "C:\\Users\\Luis Rafael\\.nuget\\packages\\",
-        "outputPath": "D:\\DetalleyConsulta\\obj\\",
+        "outputPath": "C:\\Intento\\ConsultaDetalles\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -77,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

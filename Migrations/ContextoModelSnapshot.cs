@@ -34,6 +34,9 @@ namespace DetalleyConsulta.Migrations
                     b.Property<float>("Existencia")
                         .HasColumnType("REAL");
 
+                    b.Property<DateTime>("Fecha")
+                        .HasColumnType("TEXT");
+
                     b.Property<int>("Ganancia")
                         .HasColumnType("INTEGER");
 

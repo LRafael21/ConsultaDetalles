@@ -1,10 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
 namespace DetalleyConsulta.Migrations
 {
-    public partial class Inicial : Migration
+    public partial class Inicial2 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -19,7 +20,8 @@ namespace DetalleyConsulta.Migrations
                     Costo = table.Column<float>(type: "REAL", nullable: false),
                     ValorInventario = table.Column<float>(type: "REAL", nullable: false),
                     Precio = table.Column<float>(type: "REAL", nullable: false),
-                    Ganancia = table.Column<int>(type: "INTEGER", nullable: false)
+                    Ganancia = table.Column<int>(type: "INTEGER", nullable: false),
+                    Fecha = table.Column<DateTime>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {

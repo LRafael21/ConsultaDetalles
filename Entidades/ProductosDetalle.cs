@@ -25,5 +25,12 @@ namespace DetalleyConsulta.Entidades
             ExistenciaEmpaque = existenciaEmpaque;
 
         }
+        public ProductosDetalle(int productoId,  decimal cantidad)
+        {
+            ProductoId = productoId;
+            Cantidad = cantidad;
+         
+
+        }
     }
 }

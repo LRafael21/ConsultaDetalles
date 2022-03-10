@@ -20,13 +20,13 @@ namespace DetalleyConsulta.BLL
             _contexto = contexto;
         }
 
-        private bool Existe(int ID)
+        private bool Existe(int productoId)
         {
             bool encontrado = false;
 
             try
             {
-                encontrado = _contexto.Productos.Any(e => e.ProductoId == ID);
+                encontrado = _contexto.Productos.Any(e => e.ProductoId == productoId);
             }
             catch (Exception)
             {
@@ -35,13 +35,13 @@ namespace DetalleyConsulta.BLL
 
             return encontrado;
         }
-        public bool Existe(string descrip)
+        public bool Existe(string descripcion)
         {
             bool encontrado = false;
 
             try
             {
-                encontrado = _contexto.Productos.Any(e => e.Descripcion == descrip);
+                encontrado = _contexto.Productos.Any(e => e.Descripcion == descripcion);
             }
             catch (Exception)
             {
@@ -107,13 +107,13 @@ namespace DetalleyConsulta.BLL
                 return Insertar(producto);
         }
 
-        public Productos Buscar(int ID)
+        public Productos Buscar(int id)
         {
             Productos producto;
 
             try
             {
-                producto = _contexto.Productos.Include(x => x.ProductosDetalle).Where(p => p.ProductoId == ID).SingleOrDefault();
+                producto = _contexto.Productos.Include(x => x.ProductosDetalle).Where(p => p.ProductoId == id).SingleOrDefault();
             }
             catch (Exception)
             {

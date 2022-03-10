@@ -8,65 +8,61 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DetalleyConsulta
 build_property.RootNamespace = DetalleyConsulta
-build_property.ProjectDir = D:\DetalleyConsulta\
+build_property.ProjectDir = C:\Intento\ConsultaDetalles\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\DetalleyConsulta
+build_property.MSBuildProjectDirectory = C:\Intento\ConsultaDetalles
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/DetalleyConsulta/App.razor]
+[C:/Intento/ConsultaDetalles/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DetalleyConsulta/Pages/ConsultaDetalles.razor]
+[C:/Intento/ConsultaDetalles/Pages/ConsultaDetalles.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29uc3VsdGFEZXRhbGxlcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DetalleyConsulta/Pages/ConsultaProductos.razor]
+[C:/Intento/ConsultaDetalles/Pages/ConsultaProductos.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29uc3VsdGFQcm9kdWN0b3MucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DetalleyConsulta/Pages/Counter.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+[C:/Intento/ConsultaDetalles/Pages/EntradaProducEmpacados.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW50cmFkYVByb2R1Y0VtcGFjYWRvcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DetalleyConsulta/Pages/FetchData.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/DetalleyConsulta/Pages/Index.razor]
+[C:/Intento/ConsultaDetalles/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DetalleyConsulta/Pages/RegistroProductos.razor]
+[C:/Intento/ConsultaDetalles/Pages/RegistroProductos.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0cm9Qcm9kdWN0b3MucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DetalleyConsulta/Shared/SurveyPrompt.razor]
+[C:/Intento/ConsultaDetalles/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DetalleyConsulta/_Imports.razor]
+[C:/Intento/ConsultaDetalles/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DetalleyConsulta/Shared/MainLayout.razor]
+[C:/Intento/ConsultaDetalles/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-tvg9qa0qr0
 
-[D:/DetalleyConsulta/Shared/NavMenu.razor]
+[C:/Intento/ConsultaDetalles/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-vgqs5ztuas
 
-[D:/DetalleyConsulta/Pages/Error.cshtml]
+[C:/Intento/ConsultaDetalles/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DetalleyConsulta/Pages/_Host.cshtml]
+[C:/Intento/ConsultaDetalles/Pages/_Host.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DetalleyConsulta/Pages/_Layout.cshtml]
+[C:/Intento/ConsultaDetalles/Pages/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

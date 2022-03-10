@@ -1,5 +1,5 @@
 {
-  "FilePath": "d:\\DetalleyConsulta\\DetalleyConsulta.csproj",
+  "FilePath": "c:\\Intento\\ConsultaDetalles\\DetalleyConsulta.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "6.0",
@@ -12,68 +12,35 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": -316797754,
+        "HashCode": 1652589804,
         "Kind": "Components.Component",
-        "Name": "DetalleyConsulta.Pages.Counter",
+        "Name": "DetalleyConsulta.Pages.ConsultaDetalles",
         "AssemblyName": "DetalleyConsulta",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Counter"
+            "TagName": "ConsultaDetalles"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "DetalleyConsulta.Pages.Counter"
+          "Common.TypeName": "DetalleyConsulta.Pages.ConsultaDetalles"
         }
       },
       {
-        "HashCode": 866459506,
+        "HashCode": 46732761,
         "Kind": "Components.Component",
-        "Name": "DetalleyConsulta.Pages.Counter",
+        "Name": "DetalleyConsulta.Pages.ConsultaDetalles",
         "AssemblyName": "DetalleyConsulta",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "DetalleyConsulta.Pages.Counter"
+            "TagName": "DetalleyConsulta.Pages.ConsultaDetalles"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "DetalleyConsulta.Pages.Counter",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1735348606,
-        "Kind": "Components.Component",
-        "Name": "DetalleyConsulta.Pages.FetchData",
-        "AssemblyName": "DetalleyConsulta",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "DetalleyConsulta.Pages.FetchData"
-        }
-      },
-      {
-        "HashCode": 610083257,
-        "Kind": "Components.Component",
-        "Name": "DetalleyConsulta.Pages.FetchData",
-        "AssemblyName": "DetalleyConsulta",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "DetalleyConsulta.Pages.FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "DetalleyConsulta.Pages.FetchData",
+          "Common.TypeName": "DetalleyConsulta.Pages.ConsultaDetalles",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -144,39 +111,6 @@
         }
       },
       {
-        "HashCode": 1652589804,
-        "Kind": "Components.Component",
-        "Name": "DetalleyConsulta.Pages.ConsultaDetalles",
-        "AssemblyName": "DetalleyConsulta",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ConsultaDetalles"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "DetalleyConsulta.Pages.ConsultaDetalles"
-        }
-      },
-      {
-        "HashCode": 46732761,
-        "Kind": "Components.Component",
-        "Name": "DetalleyConsulta.Pages.ConsultaDetalles",
-        "AssemblyName": "DetalleyConsulta",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "DetalleyConsulta.Pages.ConsultaDetalles"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "DetalleyConsulta.Pages.ConsultaDetalles",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": 2116495525,
         "Kind": "Components.Component",
         "Name": "DetalleyConsulta.Pages.RegistroProductos",
@@ -230,35 +164,55 @@
         }
       },
       {
-        "HashCode": 1459315343,
+        "HashCode": -777503663,
         "Kind": "Components.Component",
-        "Name": "DetalleyConsulta.App",
+        "Name": "DetalleyConsulta.Pages.EntradaProducEmpacados",
         "AssemblyName": "DetalleyConsulta",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "App"
+            "TagName": "EntradaProducEmpacados"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "ProductoId",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "ProductoId"
+            }
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "DetalleyConsulta.App"
+          "Common.TypeName": "DetalleyConsulta.Pages.EntradaProducEmpacados"
         }
       },
       {
-        "HashCode": 1226589725,
+        "HashCode": -1016459524,
         "Kind": "Components.Component",
-        "Name": "DetalleyConsulta.App",
+        "Name": "DetalleyConsulta.Pages.EntradaProducEmpacados",
         "AssemblyName": "DetalleyConsulta",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "DetalleyConsulta.App"
+            "TagName": "DetalleyConsulta.Pages.EntradaProducEmpacados"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "ProductoId",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "ProductoId"
+            }
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "DetalleyConsulta.App",
+          "Common.TypeName": "DetalleyConsulta.Pages.EntradaProducEmpacados",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -441,6 +395,39 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "DetalleyConsulta.Shared.NavMenu",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1459315343,
+        "Kind": "Components.Component",
+        "Name": "DetalleyConsulta.App",
+        "AssemblyName": "DetalleyConsulta",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "DetalleyConsulta.App"
+        }
+      },
+      {
+        "HashCode": 1226589725,
+        "Kind": "Components.Component",
+        "Name": "DetalleyConsulta.App",
+        "AssemblyName": "DetalleyConsulta",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "DetalleyConsulta.App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "DetalleyConsulta.App",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -17221,74 +17208,69 @@
   "RootNamespace": "DetalleyConsulta",
   "Documents": [
     {
-      "FilePath": "d:\\DetalleyConsulta\\Pages\\FetchData.razor",
-      "TargetPath": "Pages\\FetchData.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "d:\\DetalleyConsulta\\Pages\\_Layout.cshtml",
-      "TargetPath": "Pages\\_Layout.cshtml",
+      "FilePath": "c:\\Intento\\ConsultaDetalles\\Pages\\_Host.cshtml",
+      "TargetPath": "Pages\\_Host.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\DetalleyConsulta\\Shared\\SurveyPrompt.razor",
-      "TargetPath": "Shared\\SurveyPrompt.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "d:\\DetalleyConsulta\\App.razor",
-      "TargetPath": "App.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "d:\\DetalleyConsulta\\Pages\\Index.razor",
+      "FilePath": "c:\\Intento\\ConsultaDetalles\\Pages\\Index.razor",
       "TargetPath": "Pages\\Index.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "d:\\DetalleyConsulta\\Pages\\Counter.razor",
-      "TargetPath": "Pages\\Counter.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "d:\\DetalleyConsulta\\Pages\\ConsultaDetalles.razor",
-      "TargetPath": "Pages\\ConsultaDetalles.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "d:\\DetalleyConsulta\\Shared\\MainLayout.razor",
-      "TargetPath": "Shared\\MainLayout.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "d:\\DetalleyConsulta\\Pages\\ConsultaProductos.razor",
+      "FilePath": "c:\\Intento\\ConsultaDetalles\\Pages\\ConsultaProductos.razor",
       "TargetPath": "Pages\\ConsultaProductos.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "d:\\DetalleyConsulta\\Pages\\Error.cshtml",
-      "TargetPath": "Pages\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\DetalleyConsulta\\_Imports.razor",
-      "TargetPath": "_Imports.razor",
-      "FileKind": "componentImport"
-    },
-    {
-      "FilePath": "d:\\DetalleyConsulta\\Shared\\NavMenu.razor",
-      "TargetPath": "Shared\\NavMenu.razor",
+      "FilePath": "c:\\Intento\\ConsultaDetalles\\Pages\\EntradaProducEmpacados.razor",
+      "TargetPath": "Pages\\EntradaProducEmpacados.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "d:\\DetalleyConsulta\\Pages\\RegistroProductos.razor",
+      "FilePath": "c:\\Intento\\ConsultaDetalles\\Pages\\_Layout.cshtml",
+      "TargetPath": "Pages\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Intento\\ConsultaDetalles\\Pages\\ConsultaDetalles.razor",
+      "TargetPath": "Pages\\ConsultaDetalles.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Intento\\ConsultaDetalles\\Shared\\MainLayout.razor",
+      "TargetPath": "Shared\\MainLayout.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Intento\\ConsultaDetalles\\Pages\\RegistroProductos.razor",
       "TargetPath": "Pages\\RegistroProductos.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "d:\\DetalleyConsulta\\Pages\\_Host.cshtml",
-      "TargetPath": "Pages\\_Host.cshtml",
+      "FilePath": "c:\\Intento\\ConsultaDetalles\\Shared\\NavMenu.razor",
+      "TargetPath": "Shared\\NavMenu.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Intento\\ConsultaDetalles\\Shared\\SurveyPrompt.razor",
+      "TargetPath": "Shared\\SurveyPrompt.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Intento\\ConsultaDetalles\\Pages\\Error.cshtml",
+      "TargetPath": "Pages\\Error.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Intento\\ConsultaDetalles\\_Imports.razor",
+      "TargetPath": "_Imports.razor",
+      "FileKind": "componentImport"
+    },
+    {
+      "FilePath": "c:\\Intento\\ConsultaDetalles\\App.razor",
+      "TargetPath": "App.razor",
+      "FileKind": "component"
     }
   ],
   "SerializationFormat": "0.2"
